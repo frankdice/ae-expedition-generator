@@ -1,0 +1,11 @@
+version: '2'
+services:
+  app:
+    image: ae-randomizer
+    container_name: ae-randomizer
+    ports: 
+      - "5000:5000"
+networks:
+    default:
+        external:
+            name: cloudbuild
